@@ -1,0 +1,579 @@
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	
+
+	#container{
+		width: 100%;
+		/*height: 1500px;*/
+		overflow: hidden;
+		background-color: #F5F5F5;
+	}
+
+	
+	/*头部导航左侧登录注册*/
+	
+
+
+	
+/*头部导航右侧*/
+
+
+	
+	/*我的淘宝 二级菜单*/
+	
+	
+
+	
+	
+	
+	
+	
+
+
+
+	
+	
+	
+
+
+	/*商品分类栏 轮播图上面部分*/
+	#shop-nav{
+		width: 1349px;
+		/*width: 100%;*/
+		height: 36px;
+		margin: 0 auto;
+		position: relative;
+		padding-left: 44px;
+		border-bottom: 2px solid #FF0036;
+		background-color: #FFF;
+		
+	}
+	#shop-nav ul li{
+		float: left;
+		height: 35px;
+		line-height: 35px;
+		list-style: none;
+		padding: 0px 8px;
+		position: relative;
+	}
+	#shop-nav ul li img{
+		width: 100px;
+		height: 30px;
+		padding-top:5px;
+	}
+	#shop-nav ul li a{
+		text-decoration: none;
+		color: #333;
+		font-size: 16px;
+		
+	}
+	#shop-nav ul li a:hover{
+		color: #FF0036;
+	}
+	#shop-nav ul .shop-nav-title{
+		width: 200px;
+		height: 36px;
+		font-weight: 700;
+		padding: 0;
+		background-color: #FF0036;
+	}
+	#shop-nav ul .shop-nav-title i{
+		color: white;
+		margin-left: 14px;
+	}
+	#shop-nav ul .shop-nav-title a{
+		color: white;
+		margin-left: 8px;
+		position: absolute;
+	}
+	#shop-nav ul .shop-nav-title a:hover{
+		color: white;
+	}
+	
+	
+	/*主内容区*/
+	#main-content{
+		width: 1348px;
+		/*width: 100%;*/
+		height: 500px;
+		margin: 0 auto;
+		position: relative;
+		padding-left: 44px;
+		background: url(../img/bgimgs.png) no-repeat 104px -1px;
+		background-color: #C9BBB9;
+	}
+	
+	#main-content .main-left-nav{
+		width: 200px;
+		height: 500px;
+		float: left;
+	}
+	
+		/*主内容左侧导航栏*/
+		#main-content .main-left-nav  li.main-nav-title{
+			list-style: none;
+			height: 31.19px;
+			width: 200px;
+			line-height: 31px;
+			font-size: 14px;
+			color: white;
+			position: relative;
+			background-color: #696969;
+		}   
+		#main-content .main-left-nav .main-nav-name a{
+			text-decoration: none;
+			color: white;
+		} 
+		#main-content .main-left-nav .main-nav-name i{
+			margin-left: 14px;
+    		margin-right: 4px;
+    		
+		}
+		
+
+		/*二级菜单效果*/
+		
+		/*子菜单中店铺logo*/
+		
+		
+		/*子菜单大致内容处理*/
+		#main-content .main-left-nav .main-nav-title .main-nav-content{
+			display: none;
+			width: 852px;
+			height: 480px;
+			background-color: #FFF;
+			position: absolute;
+			padding-top: 20px;
+			margin-left: 200px;	
+		}
+		#main-content .main-left-nav .main-nav-title .main-nav-content .son-nav-title{
+			float: left;
+			list-style: none;
+		}
+		#main-content .main-left-nav .main-nav-title .main-nav-content span{
+			display: block;
+			width: 90px;
+			float: left;
+			color: #000;
+			font-weight: 700;
+			padding-left: 30px;
+		}
+		#main-content .main-left-nav .main-nav-title .main-nav-content .son-nav-title .son-nav-content {
+			float: left;
+			border-bottom: 1px dashed #C0C0C0;
+			width: 488px;
+		}
+		#main-content .main-left-nav .main-nav-title .main-nav-content .son-nav-content li{
+			float: left;
+			list-style: none;
+			padding-left: 15px;
+		}
+		#main-content .main-left-nav .main-nav-title .main-nav-content .son-nav-content li a{
+			text-decoration: none;
+			color: #EC6A8D;
+		}
+		#main-content .main-left-nav .main-nav-name{
+			width: 200px;
+			position: absolute;
+		}
+		#main-content .main-left-nav .main-nav-title:hover .main-nav-name, #main-content .main-left-nav .main-nav-title:hover .main-nav-name i , #main-content .main-left-nav .main-nav-title:hover .main-nav-name a{
+			background-color: white;
+			color: #E54077;
+		}
+		#main-content .main-left-nav .main-nav-title:hover .main-nav-content{
+			display:block;
+			z-index: 4;
+		}
+		
+		#main-content .main-left-nav .main-nav-title .main-nav-content .shop-logo{
+			position: absolute;
+			margin-left: 608px ;
+			width: 244px;
+			padding-left: 20px;
+		}
+		#main-content .main-left-nav .main-nav-title .main-nav-content .shop-logo li {
+			float: left;
+			list-style: none;
+		}
+
+		/*轮播图下方五个广告块区域*/
+		#scroll-bottom-five{
+			display: block;
+			width: 1240px;
+			height: 162px;
+			margin: 0 auto;
+			padding-top: 20px;
+		}
+		#scroll-bottom-five span{
+			text-align: center;
+			display: block;
+			padding-bottom: 10px;
+		    font-size: 18px;
+		    color: #ff0036;
+		}
+		#scroll-bottom-five ul li{
+			list-style: none;
+			float: left;
+			padding-right: 8px;
+		}
+		#scroll-bottom-five ul li a img:hover{
+			opacity: 0.7;
+		}
+
+
+		/*轮播图下方三个广告块区域*/
+		#scroll-bottom-content{
+			display: block;
+			margin:0 auto;
+		    padding-top: 34px;
+		    width: 1230px;
+		    height: 394px;
+		    /*padding-left: 44px;*/
+		   padding-right: 32px;
+		    background-color: #F5F5F5;
+		}
+		#scroll-bottom-content p{
+			height: 55px;
+		    font-weight: 700;
+		    color: #333;
+		    font-size: 18px;
+		    background-color: white;
+		    padding-left: 12px;
+		    line-height: 55px;
+		}
+		#scroll-bottom-content p a{
+			font-weight:normal;
+		    color: #333;
+		    font-size: 16px;
+		    text-decoration: none;
+		    padding-left: 156px;
+		}
+		#scroll-bottom-content .scroll-bottom-content-left{
+			float: left;
+			width: 234px;
+		}
+		#scroll-bottom-content .scroll-bottom-content-center{
+			float: left;
+			width: 485px;
+			padding-left: 13px;
+		}
+		#scroll-bottom-content .scroll-bottom-content-right{
+			float: left;
+			width: 485px;
+			padding-left: 13px;
+		}
+		#scroll-bottom-content .scroll-bottom-content-left img:hover ,#scroll-bottom-content .scroll-bottom-content-center img:hover ,#scroll-bottom-content .scroll-bottom-content-right img:hover{
+			opacity: 0.7;
+		}
+		
+		
+		/*三块广告下方的店铺品牌区*/
+		#moreShop-adv{
+			width: 1232px;
+			height: 327px;
+			margin: 0 auto;
+		}
+		#moreShop-adv ul li{
+			float: left;
+			list-style: none;
+			width: 120px;
+			height: 108px;
+			background-color: burlywood;
+			border: 1px solid #E7C3C3;
+		}
+		
+		
+		/*天猫超市等。。*/
+		#tmall-market{
+			width: 1230px;
+			height: 700px;
+			margin: 20px auto 0;
+			/*background-color: bisque;*/
+		}
+		#tmall-market img.tmall-market-logo{
+			width:214px;
+			height:25px;
+			float: left;
+			margin-top: 3px;
+			margin-right: 394px;
+		}
+		#tmall-market ul li{
+			float: left;
+			list-style: none;
+		}
+		#tmall-market ul li a{
+			text-decoration: none;
+			color: #000;
+			display: inline-block;
+		    height: 20px;
+		    line-height: 20px;
+		    margin: 5px 10px;
+		    font-size: 14px;
+		    border: none;
+		    border-bottom: 1px solid #f5f5f5;
+		}
+		#tmall-market ul li a:hover{
+			border-bottom: 1px solid #000000;
+		}
+		#tmall-market .tmall-mak-left{
+			float: left;
+			top: 8px;
+			width:235px;
+			height: 618px;
+			position: relative;
+		}
+		#tmall-market .tmall-mak-left img{
+			width:235px;
+			height: 634px;
+		}
+		#tmall-market .tmall-mak-left img:hover{
+			cursor: pointer;
+			opacity: 0.8;
+		}
+		#tmall-market .tmall-mak-left span{
+			position: absolute;
+			display: block;
+			height: 64px;
+			width:200px;
+			top: 447px;
+		}
+		#tmall-market .tmall-mak-left .span-mak-left{
+			display: inline-block;
+			float: left;
+			text-decoration: none;
+			width: 36px;
+			height: 48px;
+			padding: 8px 17px;
+			color: #FFFFFF;
+			font-size: 18px;
+			background-color: #000000;
+		}
+		#tmall-market .tmall-mak-left .span-mak-right{
+			display: inline-block;
+			float: left;
+			text-decoration: none;
+			width: 90px;
+			height: 44px;
+			padding: 10px 20px;
+			font-size: 18px;
+			color: #FFFFFF;
+			background-color: #605E5D;
+		}
+		
+		/*中间鼠标移入切换广告*/
+		#tmall-market .tmall-mak-center{
+			float: left;
+			width: 462px;
+			height: 292px;
+			border: 2px solid #F5F5F5;
+			background-color: #FFFFFF;
+			padding: 12px 12px 5px;
+			margin: 8px 0 0 14px;
+		}
+		#tmall-market .tmall-mak-center .center-mak-left{
+			background-color: #00B262;
+			/*color: #FFFFFF;*/
+		}
+		#tmall-market .tmall-mak-center .center-mak-right{
+			background-color: #EFEBE6;
+		}
+		#tmall-market .tmall-mak-center .center-mak-left,#tmall-market .tmall-mak-center .center-mak-right{
+			float: left;
+			display: inline-block;
+			width: 231px;
+			height: 57px;
+			line-height: 57px;
+			text-align: center;
+			font-size: 18px;
+			
+		}
+		#tmall-market .tmall-mak-center .tmall-mak-center-content{
+			width: 458px;
+			height: 225px;
+			margin-top: 57px;
+			position: relative;
+			border: 2px solid #F7F7F7;
+		}
+		#tmall-market .tmall-mak-center .tmall-mak-center-content .center-content-left{
+			width: 227px;
+			height: 225px;
+			float: left;
+			display: inline-block;
+		}
+		#tmall-market .tmall-mak-center .tmall-mak-center-content .center-content-left span{
+			display: block;
+			position: absolute;
+			top: 88px;
+			height: 88px;
+			width: 276px;
+			background-color: rgba(245,245,245,0.7);
+			border-bottom-right-radius: 44px;
+			border-top-right-radius: 44px;	
+		}
+		#tmall-market .tmall-mak-center .tmall-mak-center-content .center-content-left span p.qingfeng-one{
+			display: inline-block;
+			font-size: 24px;
+			font-weight: 700;
+			letter-spacing: 1px;
+			color: #00B262;
+			height: 31px;
+			line-height: 31px;
+			margin-left: 38px;
+			margin-top: 12px;
+		}
+		#tmall-market .tmall-mak-center .tmall-mak-center-content .center-content-left span p.qingfeng-two{
+			height: 31px;
+			line-height: 31px;
+			margin-left: 38px;
+			font-size: 22px;
+			letter-spacing: 1px;
+		}
+		#tmall-market .tmall-mak-center .tmall-mak-center-content img.tmall-mak-qingfeng{
+			width: 200px;
+			height: 200px;
+			float: left;
+			padding-top: 10px;
+			padding-right: 30px;
+		}
+		
+		#tmall-market .tmall-mak-center .tmall-mak-center-bottom{
+			width: 486px;
+			height: 317px;
+			margin-top: 26px;
+			margin-left: -12px;
+		}
+		
+		#tmall-market .tmall-mak-center .tmall-mak-center-bottom .center-bottom{
+			width: 235px;
+			height: 308px;
+			float: left;
+			margin-left: 16px;
+			background-color: #FFFFFF;
+		}
+		#tmall-market .tmall-mak-center .tmall-mak-center-bottom .center-bottom img{
+			width: 185px;
+			height: 185px;
+			margin: 20px 25px 5px;
+			
+		}
+		#tmall-market .tmall-mak-center .tmall-mak-center-bottom .center-bottom p{
+			text-align: center;
+			margin: 5px 35px 15px;
+			font-size: 16px;
+		}
+		#tmall-market .tmall-mak-center .tmall-mak-center-bottom .center-bottom p.tmall-mak-shops-price{
+			text-align: center;
+			color: red;
+			font-size: 20px;
+			font-weight: 700;
+		}
+		
+		
+		#tmall-market .tmall-mak-right{
+			float: left;
+			margin-top: 10px;
+			width: 480px;
+			height: 632px;
+		}
+		#tmall-market .tmall-mak-right .tmall-mak-right-content{
+			width: 225px;
+			height: 308px;
+			float: left;
+			margin-left: 15px;
+			background-color: #FFFFFF;
+		}
+		#tmall-market .tmall-mak-right .tmall-mak-right-content img{
+			width: 185px;
+			height: 185px;
+			margin: 20px 20px 5px;
+		}
+		#tmall-market .tmall-mak-right .tmall-mak-right-content p{
+			text-align: center;
+			margin: 5px 35px 15px;
+			font-size: 16px;
+		}
+		#tmall-market .tmall-mak-right .tmall-mak-right-content p.tmall-mak-shops-price{
+			text-align: center;
+			color: red;
+			font-size: 20px;
+			font-weight: 700;
+		}
+		
+		/*天猫国际*/
+		#tmall-guoji{
+			width: 1230px;
+			height: 665px;
+			margin: 0 auto;
+		}
+		#tmall-guoji img.tmall-guoji-logo{
+			width:214px;
+			height:25px;
+			float: left;
+			margin-top: 3px;
+			margin-right: 770px;
+		}
+		#tmall-guoji ul.tmall-guoji-nav li{
+			float: left;
+			list-style: none;
+		}
+		#tmall-guoji ul.tmall-guoji-nav li a{
+			text-decoration: none;
+			color: #000;
+			display: inline-block;
+		    height: 20px;
+		    line-height: 20px;
+		    margin: 5px 10px;
+		    font-size: 14px;
+		    border: none;
+		    border-bottom: 1px solid #f5f5f5;
+		}
+		#tmall-guoji ul.tmall-guoji-nav li a:hover{
+			border-bottom: 1px solid #000000;
+		}
+		
+		#tmall-guoji .tmall-HK-things ul li{
+			float: left;
+			list-style: none;
+			width: 235px;
+			height: 301px;
+			background-color: #FFFFFF;
+			margin-right: 12px;
+			margin-top: 15px;
+		}
+		#tmall-guoji .tmall-HK-things ul li.left-first{
+			position: relative;
+			width:235px;
+			height: 301px;
+		}
+		#tmall-guoji .tmall-HK-things ul li.left-first span{
+			position: absolute;
+			display: block;
+			height: 64px;
+			width:200px;
+			top: 175px;
+		}
+		#tmall-guoji .tmall-HK-things ul li.left-first .span-HK-left{
+			display: inline-block;
+			float: left;
+			text-decoration: none;
+			width: 36px;
+			height: 48px;
+			padding: 8px 17px;
+			color: #FFFFFF;
+			font-size: 18px;
+			background-color: #000000;
+		}
+		#tmall-guoji .tmall-HK-things ul li.left-first .span-HK-right{
+			display: inline-block;
+			float: left;
+			text-decoration: none;
+			width: 88px;
+			height: 44px;
+			padding: 10px 20px;
+			font-size: 18px;
+			color: #FFFFFF;
+			background-color: rgba(14,8,8,0.7);
+		}
+		

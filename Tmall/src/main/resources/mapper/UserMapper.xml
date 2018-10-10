@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.wanczy.tmall.mapper.UserMapper">
+<select id="list" resultType="com.wanczy.tmall.pojo.User">
+select * from user 
+</select>
+<insert id="add" keyProperty="id" useGeneratedKeys="true"  parameterType="com.wanczy.tmall.pojo.User">
+insert into user (name,password) values(#{name},#{password})
+</insert>
+
+<select id="get" resultType="com.wanczy.tmall.pojo.User">
+select *from user where id = #{id}
+</select>
+<update id="update" parameterType="com.wanczy.tmall.pojo.User">
+update user set name=#{name} password=#{password} where id =#{id}
+</update>
+
+<select id="check" resultType="com.wanczy.tmall.pojo.User">
+select * from user where name=#{0} and password=#{1}
+</select>
+
+<select id="isExist" resultType="java.lang.Boolean">
+select count(id) from user where name = #{name}
+</select>
+</mapper>

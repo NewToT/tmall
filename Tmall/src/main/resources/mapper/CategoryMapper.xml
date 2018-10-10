@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.wanczy.tmall.mapper.CategoryMapper">
+<!--   <select id="list" resultType="com.wanczy.tmall.pojo.Category">
+    select * from   category order by id desc
+    <if test = "start!=null and count!=null">
+    limit #{start},#{count}
+     LIMIT 子句可以被用于强制 SELECT 语句返回指定的记录数,mysql的分页查询
+     即取出从start开始到start+count条记录
+    </if>
+  </select> -->
+     <select id="list" resultType="com.wanczy.tmall.pojo.Category">
+        SELECT * from list_category
+    </select>
+  
+  
+  <insert id="add" keyProperty="id" useGeneratedKeys="true" parameterType="com.wanczy.tmall.pojo.Category">
+  insert into Category (name) values(#{name})
+  <!--  
+主要是在主键是自增的情况下，添加成功后可以直接使用主键值，
+  其中keyProperty的值是对象的属性值不是数据库表中的字段名-->
+  </insert>
+  
+  <!--删除方法  -->
+    <delete id="delete">
+        delete from category where id= #{id}
+    </delete>
+    <!-- 编辑获取 -->
+    <select id="get" resultType = "com.wanczy.tmall.pojo.Category">
+    select  * from list_category where id = #{id}
+    </select>
+    
+    <!--修改方法  -->
+    <update id="update" parameterType="com.wanczy.tmall.pojo.Category" >
+        update category set name=#{name} where id=#{id}
+    </update>
+</mapper>
+

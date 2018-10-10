@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.wanczy.tmall.mapper.ReviewMapper">
+<select id="list" resultType="com.wanczy.tmall.pojo.Review">
+select * from Review where pid = #{pid}
+</select>
+<insert id="add" keyProperty="id" useGeneratedKeys="true"  parameterType="com.wanczy.tmall.pojo.Review">
+insert into Review (content,uid,pid,createDate) values(#{content},#{uid},#{pid},#{createDate})
+</insert>
+<delete id="delete">
+delete from Review where id = #{id}
+</delete>
+<select id="get" resultType="com.wanczy.tmall.pojo.Review">
+select *from Review where id = #{id}
+</select>
+<update id="update" parameterType="com.wanczy.tmall.pojo.Review">
+update property set content=#{content} where id =#{id}
+</update>
+
+
+</mapper>

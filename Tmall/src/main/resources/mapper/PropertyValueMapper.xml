@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.wanczy.tmall.mapper.PropertyValueMapper">
+<select id="list" resultType="com.wanczy.tmall.pojo.PropertyValue">
+select * from list_propertyValue where pid = #{pid}
+</select>
+<insert id="insert" keyProperty="id" useGeneratedKeys="true"  parameterType="com.wanczy.tmall.pojo.PropertyValue">
+insert into propertyValue (pid,ptid,value) values(#{pid},#{ptid},#{value})
+</insert>
+<delete id="delete">
+delete from propertyValue where id = #{id}
+</delete>
+<select id="get" resultType="com.wanczy.tmall.pojo.PropertyValue">
+select *from list_propertyValue where ptid = #{0} and pid=#{1}
+</select>
+<update id="update" parameterType="com.wanczy.tmall.pojo.PropertyValue">
+update propertyValue set value=#{value} where id =#{id}
+</update>
+</mapper>

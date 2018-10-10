@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.wanczy.tmall.mapper.ProductImageMapper">
+<select id="list" resultType="com.wanczy.tmall.pojo.ProductImage">
+select * from list_ProductImage where pid = #{0} and type =#{1}
+</select>
+<insert id="add" keyProperty="id" useGeneratedKeys="true"  parameterType="com.wanczy.tmall.pojo.ProductImage">
+insert into ProductImage (pid,type) values(#{pid},#{type})
+</insert>
+<delete id="delete">
+delete from ProductImage where id = #{id}
+</delete>
+<select id="get" resultType="com.wanczy.tmall.pojo.ProductImage">
+select *from list_ProductImage where id = #{id}
+</select>
+<update id="update" parameterType="com.wanczy.tmall.pojo.ProductImage">
+update ProductImage set pid=#{pid},type = #{type} where id =#{id}
+</update>
+</mapper>

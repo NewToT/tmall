@@ -1,0 +1,62 @@
+﻿.body{
+	font:12px/1.5 tahoma,"\5b4b\4f53";
+}
+.mallPage{
+	min-width: 1190px;
+	width: auto;
+	min-width: 990px;
+	background-color: transparent;
+}
+.mallPage .header{
+	padding: 22px 0px;
+	height: 80px;
+	width: 1190px;
+	margin: auto;
+}
+
+a{
+	color: -webkit-link;
+	text-decoration: none;
+	cursor: auto;
+}
+
+.log{
+width:180px;
+	
+}
+
+.inner{
+	position: relative;
+	width: 1190px;
+	margin: auto;
+}
+
+.l_form{
+	position: absolute;
+	top: 91px;
+	right: 60px;
+	background: #FFF;
+}
+
+.form_content{
+	position: relative;
+	background: #FFF;
+}
+
+.bd{
+	width: 300px;
+	padding: 25px 25px 23px;
+	color: #6c6c6c;
+	background: #FFF;
+	position: relative;
+	margin: 0 auto;
+
+}
+
+.l_footer a{
+	margin-right: 3px;
+	text-decoration: none;
+	cursor: auto;
+	line-height: 25px;
+	color: black;
+}

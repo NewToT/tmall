@@ -1,0 +1,75 @@
+
+	#container{
+		width: 100%;
+		/*height: 1500px;*/
+		overflow: hidden;
+		background-color: #F5F5F5;
+	}
+#header-search{
+		height: 130px;
+		width: 1366px;
+		margin: 0 auto;
+		position: relative;
+		background-color: #FFF;
+	}
+	#header-search .search-content{
+		position: absolute;
+		float: left;
+		height: 106px;
+		width: 1230px;
+	}
+	#header-search .search-content .search{
+		width: 623px;
+		height: 36px;
+		margin-top: 39px;
+		margin-left: 363px;
+		position: absolute;
+		border: 2px solid #FF0036;
+	}
+	#header-search .search-content .search .search-text{
+		width: 491px;
+		height: 32px;
+		border: 0;
+		color: black;
+		font-size: 15px;
+		outline: none;
+	}
+	 .search-btn{
+		width: 128px;
+		height: 34px;
+		font-size: 18px;
+		font-weight: 700;
+		letter-spacing: 0.3em;
+		color: white;
+		border: 0;
+		cursor: pointer;
+		padding-bottom: 3px;
+		background-color: #FF0036;
+	}
+	#header-search .search-content .search .search-hot li{
+		float: left;
+		list-style: none;
+		padding: 4px 6px;
+		
+	}
+	#header-search .search-content .search .search-hot li a{
+		text-decoration: none;
+		font-size: 14px;
+		color: #999999;
+	}
+	#header-search .search-content .search .search-hot li.hot-red a{
+		color: #FF0036;
+	}
+	#header-search .search-content .search .search-hot li.hot-line{
+		font-size: 14px;
+		color: #ccc;
+	}
+	
+	/*天猫logo*/
+	#header-search img{
+		position: absolute;
+		width:240px;
+		
+		height: 110px;
+		float: left;
+	}

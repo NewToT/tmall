@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.wanczy.tmall.mapper.ProductMapper">
+<select id="list" resultType="com.wanczy.tmall.pojo.Product">
+select * from list_product where cid = #{cid}
+</select>
+<insert id="add" keyProperty="id" useGeneratedKeys="true"  parameterType="com.wanczy.tmall.pojo.Product">
+ insert into product (name, subTitle, originalPrice, 
+      promotePrice, stock, cid, 
+      createDate)
+    values (#{name,jdbcType=VARCHAR}, #{subTitle,jdbcType=VARCHAR}, #{originalPrice,jdbcType=REAL}, 
+      #{promotePrice,jdbcType=REAL}, #{stock,jdbcType=INTEGER}, #{cid,jdbcType=INTEGER}, 
+      #{createDate,jdbcType=TIMESTAMP})
+</insert>
+<delete id="delete">
+delete from product where id = #{id}
+</delete>
+<select id="get" resultType="com.wanczy.tmall.pojo.Product">
+select *from list_product where id = #{id}
+</select>
+<update id="update" parameterType="com.wanczy.tmall.pojo.Product">
+ update product
+    set name = #{name},
+      subTitle = #{subTitle},
+      originalPrice = #{originalPrice},
+      promotePrice = #{promotePrice},
+      stock = #{stock},
+      cid = #{cid},
+      createDate = #{createDate}
+    where id = #{id}
+</update>
+<select id="search" resultType="com.wanczy.tmall.pojo.Product" parameterType="java.lang.String">
+SELECT * FROM product where
+
+name LIKE CONCAT('%',#{keyword},'%')
+
+or subTitle like concat('%',#{keyword},'%')
+
+</select>
+</mapper>
